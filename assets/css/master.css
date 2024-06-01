@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'project';
+    src: url('../font/Merriweather-Bold.ttf');
+    font-family: 'text';
+    src: url('../font/Merriweather-Light.ttf');
+}
+
+@keyframes animemain {
+    0% {
+
+        transform: translate(-50%, -50%)scale(1);
+    }
+
+    47% {
+        transform: translate(-50%, -50%)scale(.5);
+    }
+
+    53% {
+        transform: translate(-50%, -50%)scale(.5);
+    }
+
+    97% {
+        transform: translate(-50%, -50%)scale(1.25);
+    }
+
+    97.0000000001% {
+        transform: translate(-50%, -50%)scale(1.25);
+    }
+
+    100% {
+        transform: translate(-50%, -50%)scale(1);
+    }
+}
+
+@keyframes animespan {
+    /* 0% {
+        top: 0;
+    }
+
+    47% {
+        top: 100px;
+    }
+
+    53% {
+        top: 200px;
+    }
+
+    95% {
+        top: 500px;
+    }
+
+    100% {
+        top: 700px;
+    } */
+    to{top: 700px;}
+}
+
+/* .box{
+    background-color: rgba(118, 2, 2, 0.846);
+} */

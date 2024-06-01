@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chance Spinner</title>
+    <link rel="stylesheet" href="assets/font/fontello-3893c810/css/fontello.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-[#2b0006]">
+    <main class="w-full 2xl:container mx-auto relative overflow-x-hidden">
+        <section class="w-full flex flex-wrap mt-[50px]">
+            <div
+                class="lg:w-[50%] w-full flex flex-wrap justify-evenly my-[20px] items-center *:font-project *:font-semibold">
+                <span class="flex w-full lg:w-auto relative flex-wrap items-center justify-center">
+                    <p class="text-white lg:w-full text-lg ">Your Chance</p>
+                    <i class="icon-heart text-red-500 text-4xl"></i>
+                    <span id="heart"
+                        class="bg-white px-2 absolute top-[20px] left-[68%] sm:left-[61%] md:left-[60%] lg:top-[60px] lg:left-[53%] rounded-xl">2</span>
+                </span>
+                <span id="prize"
+                    class="flex cursor-pointer w-full lg:w-auto relative flex-wrap items-center justify-center">
+                    <p class="text-white lg:w-full text-lg ">Your prizes</p>
+                    <i class="icon-money text-green-500 text-4xl"></i>
+                    <span id="money"
+                        class="bg-white px-2 absolute top-[20px] left-[68%] sm:left-[61%] md:left-[58%] lg:top-[60px] lg:left-[53%] rounded-xl">0</span>
+                </span>
+                <span id="btnguide2"
+                    class=" cursor-pointer flex w-full lg:w-auto relative flex-wrap items-center justify-center">
+                    <p class="text-white lg:w-full text-lg ">Guide</p>
+                    <i class="icon-book-open text-yellow-500 text-4xl"></i>
+                </span>
+            </div>
+        </section>
+        <section class="w-full flex overflow-hidden relative mt-[30px] justify-evenly items-center">
+            <span
+                class="w-[50px] h-[50px] flex justify-center items-center fixed lg:top-[25%] top-[32%] z-[100] left-[51%] lg:left-[50%] translate-x-[-50%]"><i
+                    class="icon-down-bold text-green-600 text-4xl"></i></span>
+            <!-- <div class="w-[300px]">
+                        <img class="w-[80%]" src="assets/img/panda.jpg" alt="">
+                    </div> -->
+            <div id="boxmain"
+                class="bg-myback transition-all duration-[5s] w-[400px] flex justify-center items-center h-[400px] lg:w-[500px] rounded-[50%] lg:h-[500px] bg-cover bg-no-repeat">
+            </div>
+            <button id="spin"
+                class="px-3 py-3 rounded-2xl text-2xl font-project bg-red-700 text-white absolute hover:bg-sky-500 shadow-myshadow top-[41%] left-[37%] md:left-[44%] lg:top-[43%] lg:left-[46%] z-50">Round</button>
+            <div id="allspan"
+                class="lg:w-[50%] transition-all duration-500 bg-white w-full *:absolute *:w-[10px] *:h-[15px] z-[350]  hidden  flex-wrap justify-evenly items-center absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <span
+                    class="bg-red-500 top-[40px] left-[31%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-yellow-400 top-[110px] left-[5%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-purple-600 top-[200px] left-[10%] transition-all duration-500 animate-anime2 rotate-[-15deg]"></span>
+                <span
+                    class="bg-pink-500 top-[60px] left-[13%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-orange-500 top-[35px] left-[23%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-white top-[150px] left-[20%] transition-all duration-500 animate-anime2 rotate-[-15deg]"></span>
+                <span
+                    class="bg-orange-400 top-[43px] left-[15%] transition-all duration-500 animate-anime2 rotate-[-10deg]"></span>
+                <span
+                    class="bg-blue-600 top-[80px] left-[30%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-pink-800 top-[25px] left-[35%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-green-600 top-[160px] left-[47%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-purple-500 top-[18px] left-[40%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-cyan-600 top-[110px] left-[45%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-pink-400 top-[95px] left-[28%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-fuchsia-500 top-[22px] left-[40%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-indigo-500 top-[140px] left-[50%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-red-700 top-[15px] left-[55%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-lime-500 top-[70px] left-[60%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-amber-500 top-[32px] left-[65%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-violet-600 top-[120px] left-[20%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-zinc-600 top-[20px] left-[85%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-emerald-500 top-[110px] left-[40%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-pink-500 top-[34px] left-[42%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-orange-800 top-[60px] left-[34%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-sky-800 top-[50px] left-[80%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-purple-400 top-[120px] left-[60%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-amber-300 top-[33px] left-[70%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-pink-950 top-[60px] left-[55%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-purple-500 top-[20px] left-[75%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-emerald-300 top-[100px] left-[65%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-pink-800 top-[100px] left-[80%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-violet-900 top-[80px] left-[43%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-sky-400 top-[70px] left-[90%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-lime-700 top-[74px] left-[28%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-orange-500 top-[200px] left-[95%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-pink-700 top-[90px] left-[15%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-yellow-400 top-[85px] left-[83%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-blue-600 top-[150px] left-[72%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+                <span
+                    class="bg-slate-300 top-[37px] left-[92%] transition-all duration-500 animate-anime2 rotate-[-20deg]"></span>
+            </div>
+            <div id="boxres"
+                class="lg:w-[40%] w-full shadow-shadow2 z-[200] *:my-[35px] text-center bg-sky-200 hidden flex-wrap justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <p id="result" class="w-full text-3xl font-project font-bold"></p>
+                <button class="px-[40px] text-xl rounded-lg py-[10px] text-white bg-red-600 font-text">OK</button>
+            </div>
+        </section>
+        <section id="secguide2"
+            class="w-full z-[100] bg-opacity-95 overflow-hidden bg-gray-900 h-full hidden flex-wrap top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] justify-center items-center absolute">
+            <div class="lg:w-[50%] w-full flex flex-wrap justify-center shadow-shadow2 *:my-[20px] items-center">
+                <div class="w-full flex justify-center items-center">
+                    <h2 class="text-white font-project font-bold text-3xl">Welcome To Chance Game!</h2>
+                </div>
+                <p class="font-text text-sm w-full text-white pl-[15px]">1.By registering and entering the game, you can
+                    spin the lucky wheel twice!</p>
+                <p class="font-text text-sm w-full text-white pl-[15px]">2.You can get another chance by inviting your
+                    friends</p>
+                <p class="font-text text-sm w-full text-white pl-[15px]">3.You will be contacted to give away the great
+                    prizes.</p>
+                <p class="font-text text-xl w-full text-yellow-400 text-center font-semibold">You will definitely be
+                    lucky!</p>
+                <span id="ready2"
+                    class="px-2 cursor-pointer text-xl text-white hover:bg-green-700 font-project py-2 bg-sky-600 w-[20%] text-center rounded-xl">Im
+                    Ready!</span>
+            </div>
+        </section>
+        <section class="w-full top-[20%] z-[300] left-0 lg:left-[-20%] hidden flex-wrap justify-center absolute ">
+            <div id="boxpriz"
+                class="shadow-shadow2 lg:w-[400px] w-full rounded-2xl flex flex-wrap justify-center items-center bg-white">
+                <div id="btndel" class="w-full cursor-pointer flex justify-end items-center">
+                    <i class="icon-cancel text-red-600 hover:text-green-800 text-2xl"></i>
+                </div>
+                <div class="flex flex-wrap text-center justify-center items-center font-bold font-project text-2xl">
+                    <h2 class="w-full">You Can See Your Prizes!</h2>
+                </div>
+            </div>
+        </section>
+        <div class="group lg:w-[15%] w-[30%] z-50 flex cursor-pointer justify-end fixed right-0 bottom-0">
+            <img class="lg:w-[180px] lg:h-[180px] w-[200px] h-[110px] rounded-[50%]" src="assets/img/44.jpg" alt="">
+            <ul
+                class="group-hover:visible group-hover:opacity-[1] absolute top-0 lg:right-[80%] right-[110%] list-none *:text-white rotate-[18deg] translate-y-[-13px] hover:*:text-yellow-400 transition-all duration-[.4s] invisible opacity-0">
+                <li class="mb-[15px] translate-x-[10px]"><a
+                        href="https://www.instagram.com/fateme_mohamadiian.fed?igsh=YzVkODRmOTdmMw=="><i
+                            class="icon-instagram text-[30px]"></i></a></li>
+                <li class="mb-[15px]"><a href="http://www.linkedin.com/in/fateme-mohamadian-dev0824"><i
+                            class="icon-linkedin-2 text-[30px]"></i></a></li>
+                <li class="mb-[15px] translate-x-[20px]"><a href="https://github.com/fatemeMohamadian"><i
+                            class=" icon-github-squared text-[30px]"></i></a></li>
+            </ul>
+        </div>
+        <audio id="s1" src="assets/sound/spinning.mp3"></audio>
+        <audio id="s2" src="assets/sound/barande.mp3"></audio>
+        <audio id="s3" src="assets/sound/Game-Over.mp3"></audio>
+    </main>
+    <script src="assets/js/main.js">
+    </script>
+</body>
+
+</html>
