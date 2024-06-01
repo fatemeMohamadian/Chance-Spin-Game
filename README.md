@@ -1,13 +1,12 @@
 # Chance-Spin-Game
 wheel of luck Game!
-**Used By JavaScript**</br></br>
+**You Can Win Or lose!! Try your luck:)**</br></br>
 
 
 👩‍💻😎 [Watch Demo](https://fatememohamadian.github.io/Chance-Spin-Game/)
-                                                           
 
-                                                           
 
+![1](https://github.com/fatemeMohamadian/Chance-Spin-Game/assets/155579918/013e267a-1126-450e-8ec1-ab0f86224c07)
 
                                                           😎😉 
                                     
