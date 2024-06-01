@@ -1,5 +1,5 @@
 # Chance-Spin-Game
-wheel of luck Game!
+wheel of luck Game!</br></br>
 **You Can Win Or lose!! Try your luck:)**</br></br>
 
 
