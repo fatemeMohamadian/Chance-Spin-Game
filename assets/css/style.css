@@ -900,10 +900,6 @@ video {
   z-index: 350;
 }
 
-.z-\[\] {
-  z-index: ;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -959,6 +955,10 @@ video {
   height: 100vh;
 }
 
+.h-\[110px\] {
+  height: 110px;
+}
+
 .h-\[150px\] {
   height: 150px;
 }
@@ -987,24 +987,16 @@ video {
   height: 100%;
 }
 
-.h-\[80px\] {
-  height: 80px;
-}
-
-.h-\[100px\] {
-  height: 100px;
-}
-
-.h-\[110px\] {
-  height: 110px;
-}
-
 .w-\[150px\] {
   width: 150px;
 }
 
 .w-\[20\%\] {
   width: 20%;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-\[220px\] {
@@ -1041,10 +1033,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[200px\] {
-  width: 200px;
 }
 
 .translate-x-\[-50\%\] {
@@ -1622,7 +1610,9 @@ video {
   font-family: 'project';
 
   src: url('../font/Merriweather-Bold.ttf');
+}
 
+@font-face {
   font-family: 'text';
 
   src: url('../font/Merriweather-Light.ttf');
@@ -1760,11 +1750,6 @@ video {
   font-weight: 600;
 }
 
-.\*\:text-orange-600 > * {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
-}
-
 .\*\:text-white > * {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1788,11 +1773,6 @@ video {
 .hover\:text-green-800:hover {
   --tw-text-opacity: 1;
   color: rgb(22 101 52 / var(--tw-text-opacity));
-}
-
-.hover\:\*\:text-sky-600 > *:hover {
-  --tw-text-opacity: 1;
-  color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 
 .hover\:\*\:text-yellow-400 > *:hover {
@@ -1825,6 +1805,10 @@ video {
 
   .md\:left-\[60\%\] {
     left: 60%;
+  }
+
+  .md\:left-0 {
+    left: 0px;
   }
 }
 
@@ -1859,6 +1843,10 @@ video {
 
   .lg\:top-\[60px\] {
     top: 60px;
+  }
+
+  .lg\:left-0 {
+    left: 0px;
   }
 
   .lg\:h-\[180px\] {
